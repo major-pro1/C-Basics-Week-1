@@ -16,4 +16,18 @@ int main()
 
     // print results
     printf("\nSum = %.0lf\n", sum);
-    printf("Difference = %.0lf\n", difference);clear
+    printf("Difference = %.0lf\n", difference);
+    printf("Product = %.0lf\n", product);
+
+    // Handle division by Zero
+    if (num2 != 0)
+    {
+        double quotient = num1 / num2;
+        printf("Quotient = %.2lf\n", quotient);
+    }
+    else
+    {
+        printf("Quotient = undefined (cannot divide by zero)\n");
+    }
+    return 0;
+}
